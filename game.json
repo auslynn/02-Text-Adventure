@@ -1,0 +1,86 @@
+{
+    "CELL1": {
+        "name": "\nPrison Cell",
+        "desc": "\nYou find yourself in a cold stone cell. There is a cell door to the north. \nThe word 'Escape.' is inscribed above the cell door",
+        "exits": [{
+            "exit": "NORTH",
+            "target": "CORRIDOR1"
+        }]
+    },
+    "CORRIDOR1": {
+        "name": "\nDungeon Hallway",
+        "desc": "\nYou exit the cell to find a long, empty hallway stretching out to the east and west. \nTo the east, a single door waits at the end of the hall. \nTo the west, an expanse of darkness.",
+        "exits": [{
+            "exit": "SOUTH",
+            "target": "CELL1"
+        },{
+            "exit": "EAST",
+            "target": "BARRACK"
+        },{
+            "exit": "WEST",
+            "target": "CORRIDOR2"
+        }]
+    },
+    "BARRACK": {
+        "name": "\nThe Barracks",
+        "desc": "\nYou enter the guards' barracks to find a room of horrors. \nChunks of gore and body matter are strewn across the floor, the stench of death hanging heavily in the air. \nIt seems they left a message for you before they met their end. \nIn large letters on the floor, the words 'Run. It will find you.' is inscribed in long crimson streaks of blood.",
+        "exits": [{
+            "exit": "WEST",
+            "target": "CORRIDOR1"
+        }]
+    },
+    "CORRIDOR2": {
+        "name": "\nDungeon Hallway",
+        "desc": "\nThe dank corridor has several long, thin claw marks along the mossy walls, some of which are tinged with rusty red. The thought of what left them there fills you with dread. \nAt the end of the hallway, the path diverges. To the south, a staircase leads down into darkness. To the north, a staircase spirals upward.",
+        "exits":[{
+            "exit": "EAST",
+            "target": "CORRIDOR1"
+        },{
+            "exit": "SOUTH",
+            "target": "CHAMBER"
+        },{
+            "exit": "NORTH",
+            "target": "TOWER"
+        }]
+    },
+    "TOWER": {
+        "name": "\nThe Watch Tower",
+        "desc": "\nYou find yourself at the top of a stone watchtower. The rocks on the eastern wall of the tower have crumbled away onto the ground far below. \n As you look below, the stones beckon you to join them at the base of the tower. 'Escape!' They plead.",
+        "exits":[{
+            "exit": "EAST",
+            "target":"ESC1"
+        },{
+            "exit": "SOUTH",
+            "target": "CORRIDOR2"
+        }]
+    },
+    "ESC1": {
+        "name": "\nThe Fall",
+        "desc": "\nYou answer the call of the fallen stones. Slowly, step over the edge and plummet toward the ground. \nThe wind roared in your ears, tears flew upward while the sky blurred with the earth and your world turned to black.\n\nCongratulations, you have escaped. But at what cost?",
+        "exits":[]
+    },
+    "CHAMBER": {
+        "name": "\nThe Chamber",
+        "desc": "\nYou descend the stairs into the darkness, feeling the wall for guidance. Eventually, you find yourself in a chamber filled with bones and marks similar to those you saw on the walls upstairs. \nTo the south, you see a staircase leading upward toward light. You hear the faint sound of running water coming through this opening. \nTo the west, another tunnel littered heavily with claw marks leads deeper into the earth.",
+        "exits":[{
+            "exit": "SOUTH",
+            "target": "ESC2"
+        },{
+            "exit": "NORTH",
+            "target": "CORRIDOR2"
+        },{
+            "exit": "WEST",
+            "target": "DCHAMBER"
+        }]
+    },
+    "ESC2": {
+        "name": "\nThe Escape",
+        "desc": "\nYou ascend the stairs to the outside, ecstatic to leave the nightmarish prison behind you. \nWhatever happened to those guards, whatever left those hideous marks, whatever made you feel that immeasureable sense of dread doesn't matter anymore. \n\nCongratulations, you have escaped.",
+        "exits": []
+    },
+    "DCHAMBER": {
+        "name": "\nThe Rake's Chamber",
+        "desc": "\nAt the end of the poorly lit tunnel, you finally see the source of marks. \nA massive humanesque creature with hands the size of rakes and black, sunken eyes is perched on top of a mound of corpses. \nThe creature locks eyes with you, letting out a guttural, bone shaking, revealing rows of needle-like teeth. \nIt stands up, lurching forward on its spindly, disjointed limbs, stretching its maw and readying its massive claws. \nWith a swing of its arm, your world turns to black. \n\nI'm sorry, you did not escape.",
+        "exits":[]
+    }
+}
